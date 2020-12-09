@@ -66,7 +66,7 @@ function password_dictionary_task2(line) {
     return password_dictionary
 }
 
-
+// Used map and filter from she-codes but probably could of used reduce here to reduce it down to a count
 let password_dictionary_complete2 = passwords.map(password_dictionary_task2);
 var passwords_valid_list2 = password_dictionary_complete2.filter(function (password_dict) {
     return password_dict.password_flag === true;
